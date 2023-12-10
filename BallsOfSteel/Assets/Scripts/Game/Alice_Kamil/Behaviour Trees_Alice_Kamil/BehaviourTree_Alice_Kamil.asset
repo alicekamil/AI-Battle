@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8370143997387909653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55f861dfa223e745b04a492f4967d1e, type: 3}
+  m_Name: Compare
+  m_EditorClassIdentifier: 
+  m_ID: 706700938
+  m_vPosition: {x: -125.000015, y: 327}
+  m_child: {fileID: 6246228021189438521}
+  m_key: CollectedHealth
+  m_operator: 2
+  m_iValue: 9
+  m_bCompareEveryFrame: 1
+--- !u!114 &-6862640975838056867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc2f6884b12eca41a3023e55fc994ae, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  m_ID: 1224034109
+  m_vPosition: {x: 0, y: 0}
+  m_child: {fileID: 245766561220684696}
+--- !u!114 &-3344979191646465073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55f861dfa223e745b04a492f4967d1e, type: 3}
+  m_Name: Compare
+  m_EditorClassIdentifier: 
+  m_ID: -1917155609
+  m_vPosition: {x: 75.00002, y: 327}
+  m_child: {fileID: -2414458295024640197}
+  m_key: CollectedHealth
+  m_operator: 3
+  m_iValue: 8
+  m_bCompareEveryFrame: 1
+--- !u!114 &-2511354844891389080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414e0d88516606c468a1c87270dc741d, type: 3}
+  m_Name: Selector
+  m_EditorClassIdentifier: 
+  m_ID: 2027658505
+  m_vPosition: {x: 0, y: 196}
+  m_children:
+  - {fileID: -8370143997387909653}
+  - {fileID: -3344979191646465073}
+--- !u!114 &-2414458295024640197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25d3a032dbc9f6f448b29d646584b43f, type: 3}
+  m_Name: Defensive
+  m_EditorClassIdentifier: 
+  m_ID: 1131690383
+  m_vPosition: {x: 75, y: 448}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d6fdce714eec3428ecb9f2abf21a9f, type: 3}
+  m_Name: BehaviourTree_Alice_Kamil
+  m_EditorClassIdentifier: 
+  m_nodes:
+  - {fileID: -6862640975838056867}
+  - {fileID: 245766561220684696}
+  - {fileID: -2511354844891389080}
+  - {fileID: 6246228021189438521}
+  - {fileID: -8370143997387909653}
+  - {fileID: -3344979191646465073}
+  - {fileID: -2414458295024640197}
+  m_root: {fileID: -6862640975838056867}
+--- !u!114 &245766561220684696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad8ded5148c0ce409fbcdee2a73ffcf, type: 3}
+  m_Name: Repeat
+  m_EditorClassIdentifier: 
+  m_ID: -1208332305
+  m_vPosition: {x: -0.0000047683716, y: 104.700005}
+  m_child: {fileID: -2511354844891389080}
+--- !u!114 &6246228021189438521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80a4fd4c57424a44815bd17757e23c9, type: 3}
+  m_Name: Aggressive
+  m_EditorClassIdentifier: 
+  m_ID: -17966841
+  m_vPosition: {x: -125, y: 448}
